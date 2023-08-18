@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Packaged Page</title>
+</head>
+<body>
+    <main>
+        <form id="horse-form">
+            <div class="column 1">
+                    <!-- horse's ID -->
+                <label for="id" class="label-title">Saisir le numéro ou le nom du cheval :</label>
+                <input type="text" id="id" name="id">
+                <br>
+                <!-- Horse's time -->
+                <label for="time" class="label-title">Saisir le temps du cheval de la course précédente :</label>
+                <input type="text" id="time" name="time">
+            
+                <!-- Jockey field -->
+                <label for="prevJockey" class="label-title">Choisir le type de jockey de la course précédente et actuelle:</label>
+                <div  class="curr-prev-field">
+                    <div class="prev-info">
+                        <label for="prevJockey">Course précédente</label>
+                        <select type="text" id="prevJockey" name="prevJockey">
+                            <option value="normal">Normal Jockey</option>
+                            <option value="crack">Crack Jockey</option>
+                        </select>
+                    </div>
+                    <div class="curr-info">
+                        <label for="currJockey">Course actuelle</label>
+                        <select type="text" id="currJockey" name="currJockey">
+                            <option value="normal">Normal Jockey</option>
+                            <option value="crack">Crack Jockey</option>
+                        </select>
+                    </div>  
+                </div>
+                <!-- Distance field -->
+                <label for="prevDistance" class="label-title">Choisir la distance de la course précédente et actuelle :</label>
+                <div  class="curr-prev-field">
+                    <div class="prev-info">
+                        <label for="prevDistance">Course précédente</label>
+                        <select type="text" id="prevDistance" name="prevDistance">
+                            <option value="2850">2850 mètres</option>
+                            <option value="2600">2600 mètres</option>
+                            <option value="2150">2150 mètres</option>
+                        </select>
+                    </div>
+                    <div class="curr-info">
+                        <label for="currDistance">Course actuelle</label>
+                        <select type="text" id="currDistance" namètrese="currDistance">
+                            <option value="2850">2850 mètres</option>
+                            <option value="2600">2600 mètres</option>
+                            <option value="2150">2150 mètres</option>
+                        </select>
+                    </div>  
+                </div>
+                <!-- localisation field -->
+                <label for="prevLocalisation" class="label-title">Choisir la localisation de la course précédente et actuelle :</label>
+                <div  class="curr-prev-field">
+                    <div class="prev-info">
+                        <label for="prevLocalisation">Course précédente</label>
+                        <select type="text" id="prevLocalisation" name="prevLocalisation">
+                            <option value="p">Province</option>
+                            <option value="v">Vincenne</option>
+                        </select>
+                    </div>
+                    <div class="curr-info">
+                        <label for="currLocalisation">Course actuelle</label>
+                        <select type="text" id="currLocalisation" namètrese="currLocalisation">
+                            <option value ="p">Province</option>
+                            <option value ="v">Vincenne</option>
+                        </select>
+                    </div>  
+                </div>
+                
+            </div>
+            <div class="column 2">
+                <!-- Race Type field -->
+                <label for="prevRaceType" class="label-title">Choisir le type de la course précédente et actuelle :</label>
+                <div  class="curr-prev-field">
+                    <div class="prev-info">
+                        <label for="prevRaceType">Course précédente</label>
+                        <select type="text" id="prevRaceType" name="prevRaceType">
+                            <option value ="a">Attelé</option>
+                            <option value ="m">Monté</option>
+                        </select>
+                    </div>
+                    <div class="curr-info">
+                        <label for="currRaceType">Course actuelle</label>
+                        <select type="text" id="currRaceType" namètrese="currRaceType">
+                            <option value ="a">Attelé</option>
+                            <option value ="m">Monté</option>
+                        </select>
+                    </div>  
+                </div>
+                    <!-- Race handicap -->
+                <label for="prevHandicap" class="label-title">Choisir l'handicap du cheval de la course précédente et actuelle</label>
+                <div  class="curr-prev-field">
+                    <div class="prev-info">
+                        <label for="prevHandicap">Course précédente</label>
+                        <select type="text" id="prevHandicap" name="prevHandicap">
+                            <option value="n">Normal</option>
+                            <option value="h">25m derrière</option>
+                        </select>
+                    </div>
+                    <div class="curr-info">
+                        <label for="currHandicap">Course actuelle</label>
+                        <select type="text" id="currHandicap" namètrese="currHandicap">
+                            <option value ="n">normal</option>
+                            <option value ="h">25m derrière</option>
+                        </select>
+                    </div>  
+                </div>
+                <!-- horse shoeing -->
+                <label for="prevShoeing" class="label-title">Choisir le type de férrage de la course précédente et actuelle :</label>
+                <div  class="curr-prev-field">
+                    <div class="prev-info">
+                        <label for="prevShoeing">Course précédente</label>
+                        <select type="text" id="prevShoeing" name="prevShoeing">
+                            <option value ="fc">Férré des quatres membres</option> <!--fc = férrage complet -->
+                            <option value ="fh">Férré ou déferré des 2 membres seulement</option>  <!--fc = férrage half  -->
+                            <option value ="dfc">Déferré des quatres membres</option>  <!--dfc = déférrage complet  -->
+                        </select>
+                    </div>
+                    <div class="curr-info">
+                        <label for="currShoeing">Course actuelle</label>
+                        <select type="text" id="currShoeing" namètrese="currShoeing">
+                            <option value ="fc">Férré des quatres membres</option> <!--fc = férrage complet -->
+                            <option value ="fh">Férré ou déferréde 2 membres seulement</option>  <!--fc = férrage (shoeing) half  -->
+                            <option value ="dfc">Déferré des quatres membres</option>  <!--dfc = déférrage complet  -->
+                        </select>
+                    </div>  
+                </div>
+                
+                <!-- last race placement -->
+                <label for="lastRaceRank" class="label-title">Le cheval a-t-il fini premier à la dernière course ?</label>
+                <div  class="curr-prev-field">
+                    <div class="prev-info">
+                        <select type="text" id="lastRaceRank" name="lastRaceRank">
+                            <option value = false >Non</option>
+                            <option value = true >Oui</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- last 3 months activity -->
+                <label for="lastActivity" class="label-title">Le cheval a-t-il couru dans les 3 derniers mois ?</label>
+                <div  class="curr-prev-field">
+                    <div class="prev-info">
+                        <select type="text" id="lastActivity" name="lastActivity">
+                            <option value = true >Oui</option>
+                            <option value = false >Non</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Add more form fields here -->
+                <button id="create-button" type="submit">Ajouter un nouveau cheval</button>
+            </div>
+            
+            
+            
+        </form>
+
+        <div id="horse-list-container">
+            <h3>Temps d'arriver estimé :</h3>
+            <button id="sort-btn" onclick="sort()">Trier</button>
+            <ul id="horse-list">
+            </ul>
+        </div>
+    </main> 
+</body>
+</html>
+

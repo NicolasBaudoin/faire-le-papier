@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-gap:  70px; /* Espace entre les colonnes */    
+    
+}
+
+form {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 65vw;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.label-title{
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+form input[type="text"],
+form select {
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;   
+}
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer; 
+}
+#horse-list-container {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    height: 700px;
+    position: relative; 
+    overflow-y: auto;
+    
+}
+
+#horse-list-container h3 {
+    margin-bottom: 10px;
+    
+    width: fit-content;
+    height: fit-content;
+}
+
+#horse-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: auto; /* Ajout de l'attribut overflow pour activer la barre de défilement */
+    max-height: 575px; /* Définir une hauteur maximale pour afficher la barre de défilement */
+    box-shadow: black 2px;
+    padding: 5px;           
+}
+
+
+.horse-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(10, 212, 20) 0%, rgb(4, 255, 0) 18%, rgba(255,255,255,1) 18%);
+    border: black solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.horse-card .horse-id {
+    font-weight: bold;
+    font-size: large;
+    flex: 1;
+    padding-left: 17px;
+}
+
+.horse-card .horse-time {
+    font-weight: bold;
+    flex: 1;
+}
+
+.horse-card .remove-cross {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    padding-right: 2px;
+}
+
+#sort-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    
+    left: 170px;
+}
+.trash-horse{
+    border: black 2px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(245,1,1,1) 0%, rgba(255,0,0,1) 18%, rgb(255, 255, 255) 18%);
+    border:1px black solid;
+}
