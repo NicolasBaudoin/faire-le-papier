@@ -1,5 +1,5 @@
 {
-  "name": "flp-test",
+  "name": "faire-le-papier",
   "version": "1.0.0",
   "description": "",
   "main": "generate-html.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NicolasBaudoin/flp-test.git"
+    "url": "git+https://github.com/NicolasBaudoin/faire-le-papier.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NicolasBaudoin/flp-test/issues"
+    "url": "https://github.com/NicolasBaudoin/faire-le-papier/issues"
   },
-  "homepage": "https://github.com/NicolasBaudoin/flp-test#readme",
+  "homepage": "https://github.com/NicolasBaudoin/faire-le-papier#readme",
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
     "dotenv": "^16.3.1",
