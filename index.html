@@ -7,6 +7,14 @@
 </head>
 <body>
     <main>
+      <div id="horse-list-container">
+            <h3>Pronostique</h3>
+        <div id="overflow-horse-list">
+            <ul id="horse-list">
+            </ul>
+        </div>
+            <button id="sort-btn" onclick="sort()">Trier</button>
+        </div>
         <form id="horse-form">
             <div class="column 1">
                     <!-- horse's ID -->
@@ -155,10 +163,7 @@
                 </div>
                 <!-- Add more form fields here -->
                 <button id="create-button" type="submit">Ajouter un nouveau cheval</button>
-            </div>
-            
-            
-            
+            </div>      
         </form>
 
         <div id="horse-list-container">
