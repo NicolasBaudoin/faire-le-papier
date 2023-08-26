@@ -52,7 +52,7 @@ let todayDate = day + '/' + month + '/' + year;
 // Define the email options
 const mailOptions = {
   from: 'baudoin.nicolasg@ggmail.com', // Sender's email
-  to: process.env.EMAIL_USER, // Recipient's email
+  to: [process.env.EMAIL_USER, 'kittiorb@gmail.com'], // Recipient's email
   subject: `Mise à jour du programme Faire-Le-Papier du ${todayDate}`,
   text: `Salut, j'ai fais une mise à jour du programme, hésite pas à me donner un retour !`,
 //   html: combinedHtml, // Use the combined HTML content here
