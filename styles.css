@@ -47,13 +47,17 @@ form select {
     margin-bottom: 10px;   
 }
 form button {
-    padding: 10px 20px;
+    margin-top: 30px;
+    padding: 20px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     background-color: #007bff;
     color: #fff;
     font-weight: bold;
     cursor: pointer; 
+    position: relative;
+    left: 5vw;
+    
 }
 /* @Pronostic*/
 #horse-list-container {
@@ -74,17 +78,21 @@ form button {
     margin-bottom:15px;
     width: fit-content;
     height: fit-content;
+
 }
 #overflow-horse-list{
   width: 90VW; /* Définissez la largeur souhaitée pour le conteneur */
   overflow-x: scroll; /* Ajoute une barre de défilement horizontale si nécessaire */
   white-space: nowrap; /* Empêche le retour à la ligne des éléments dans la liste */
+  height: 10vh;
+  overflow-y: hidden;
 }
 
 #horse-list {
   display: inline-block; /* Permet à la liste de s'adapter à la largeur de son contenu */
   padding: 0; /* Supprimez les marges internes de la liste pour éviter l'espacement inutile */
   margin: 0; /* Supprimez les marges externes pour un espacement cohérent */
+  
 }
 
 /* @card */
@@ -96,7 +104,7 @@ form button {
     border: black solid 1px;
     border-radius: 10px;
     padding: 10px;
-    margin:15px;
+    margin:5px;
 
     
 }
@@ -139,3 +147,6 @@ form button {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(245,1,1,1) 0%, rgba(255,0,0,1) 18%, rgb(255, 255, 255) 18%);
     border:1px black solid;
 }
+
+
+

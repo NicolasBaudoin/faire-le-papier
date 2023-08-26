@@ -4,27 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Packaged Page</title>
+    
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <main>
-      <div id="horse-list-container">
+        <div id="horse-list-container">
             <h3>Pronostique</h3>
-        <div id="overflow-horse-list">
-            <ul id="horse-list">
-            </ul>
-        </div>
+            <div id="overflow-horse-list">
+                <ul id="horse-list">
+                </ul>
+            </div>
             <button id="sort-btn" onclick="sort()">Trier</button>
         </div>
+        
         <form id="horse-form">
             <div class="column 1">
                     <!-- horse's ID -->
                 <label for="id" class="label-title">Saisir le numéro ou le nom du cheval :</label>
                 <input type="text" id="id" name="id">
                 <br>
-                <!-- Horse's time -->
+                    <!-- Horse's time -->
                 <label for="time" class="label-title">Saisir le temps du cheval de la course précédente :</label>
                 <input type="text" id="time" name="time">
-            
+                    <!-- last race placement -->
+                <label for="lastRaceRank" class="label-title">Le cheval a-t-il fini premier à la dernière course ?</label>
+                <div  class="curr-prev-field">
+                    <div class="prev-info">
+                        <select type="text" id="lastRaceRank" name="lastRaceRank">
+                            <option value = false >Non</option>
+                            <option value = true >Oui</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- last 3 months activity -->
+                <label for="lastActivity" class="label-title">Le cheval a-t-il couru dans les 3 derniers mois ?</label>
+                <div  class="curr-prev-field">
+                    <div class="prev-info">
+                        <select type="text" id="lastActivity" name="lastActivity">
+                            <option value = true >Oui</option>
+                            <option value = false >Non</option>
+                        </select>
+                    </div>
+                </div>
                 <!-- Jockey field -->
                 <label for="prevJockey" class="label-title">Choisir le type de jockey de la course précédente et actuelle:</label>
                 <div  class="curr-prev-field">
@@ -43,6 +65,9 @@
                         </select>
                     </div>  
                 </div>
+            </div>
+            <div class="column 2">
+                
                 <!-- Distance field -->
                 <label for="prevDistance" class="label-title">Choisir la distance de la course précédente et actuelle :</label>
                 <div  class="curr-prev-field">
@@ -82,8 +107,9 @@
                     </div>  
                 </div>
                 
-            </div>
-            <div class="column 2">
+                <button id="create-button" type="submit">Ajouter un nouveau cheval</button>
+            </div>      
+            <div class="column 3">
                 <!-- Race Type field -->
                 <label for="prevRaceType" class="label-title">Choisir le type de la course précédente et actuelle :</label>
                 <div  class="curr-prev-field">
@@ -102,7 +128,7 @@
                         </select>
                     </div>  
                 </div>
-                    <!-- Race handicap -->
+                <!-- Race handicap -->
                 <label for="prevHandicap" class="label-title">Choisir l'handicap du cheval de la course précédente et actuelle</label>
                 <div  class="curr-prev-field">
                     <div class="prev-info">
@@ -140,39 +166,10 @@
                         </select>
                     </div>  
                 </div>
-                
-                <!-- last race placement -->
-                <label for="lastRaceRank" class="label-title">Le cheval a-t-il fini premier à la dernière course ?</label>
-                <div  class="curr-prev-field">
-                    <div class="prev-info">
-                        <select type="text" id="lastRaceRank" name="lastRaceRank">
-                            <option value = false >Non</option>
-                            <option value = true >Oui</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- last 3 months activity -->
-                <label for="lastActivity" class="label-title">Le cheval a-t-il couru dans les 3 derniers mois ?</label>
-                <div  class="curr-prev-field">
-                    <div class="prev-info">
-                        <select type="text" id="lastActivity" name="lastActivity">
-                            <option value = true >Oui</option>
-                            <option value = false >Non</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- Add more form fields here -->
-                <button id="create-button" type="submit">Ajouter un nouveau cheval</button>
-            </div>      
+            </div>   
         </form>
-
-        <div id="horse-list-container">
-            <h3>Temps d'arriver estimé :</h3>
-            <button id="sort-btn" onclick="sort()">Trier</button>
-            <ul id="horse-list">
-            </ul>
-        </div>
     </main> 
+    <script src="./script.js"></script>
 </body>
 </html>
 
