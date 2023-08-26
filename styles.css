@@ -1,8 +1,9 @@
+/* @General style */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -11,22 +12,20 @@ body {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr  1fr;
-    grid-gap:  70px; /* Espace entre les colonnes */    
-    
+  display: flex;
+  flex-direction: column
 }
-
+/* @Form */
 form {
     position: relative;
     background-color: #fff;
     border-radius: 5px;
-    padding: 20px;
-    width: 65vw;
+    padding: 2vw 5vw ;
+    width: 100vw;
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    
+    justify-content:center;
+    gap:5vw; 
 }
 
 form label {
