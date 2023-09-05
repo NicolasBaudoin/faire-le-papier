@@ -58,7 +58,7 @@ btn.addEventListener('click', function addNewHorse(event) {
         horseItem.classList.add('trash-horse');
     }else horseItem.classList.add('horse-card');
     
-    horseItem.innerHTML = `<span class = 'horse-time'>${newHorse.time}</span> <span class = 'horse-id'>${newHorse.id}</span>  <a href='#' class='remove-cross' onclick='removeHorse(event)'>X</a>`;
+    horseItem.innerHTML = ` <span class = 'horse-id'>${newHorse.id}</span> <span class = 'horse-time'>${newHorse.time}</span>  <a href='#' class='remove-cross' onclick='removeHorse(event)'>X</a>`;
     horseItem.setAttribute('data-id', newHorse.id);
     horseItem.setAttribute('data-time', newHorse.time);
     horseList.appendChild(horseItem);
