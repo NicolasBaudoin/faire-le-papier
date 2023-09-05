@@ -52,13 +52,17 @@ let todayDate = day + '/' + month + '/' + year;
 // Define the email options
 const mailOptions = {
   from: 'baudoin.nicolasg@ggmail.com', // Sender's email
-  to: process.env.EMAIL_USER, // Recipient's email
+  to: [process.env.EMAIL_USER, process.env.EMAIL_ALAIN], // Recipient's email
   subject: `Mise à jour du programme Faire-Le-Papier du ${todayDate}`,
-  text: `Salut, j'ai fais une mise à jour du visuel du programme, hésite pas à me donner un retour !`,
+  text: `Salut, 
+  
+  j'ai fais une mise à jour du visuel du programme, j'ai ajouté une bannière pour faire un titre avec un peu de couleur et un infobulle qui servira à expliquer la légende sur les chevaux quand je ferai la fonction.
+  J'ai mis les pronostiques en ligne pour permettre au formulaie d'ajout de cheval d'être plus lisible. Normalement il ne devrait pas y avoir de bug, mais n'hésite pas à comparer avec la version que tu as actuellement pour être sûr
+   hésite pas à me donner un retour !`,
 //   html: combinedHtml, // Use the combined HTML content here
   attachments: [
     {
-      filename: 'faire-le-papier.html',
+      filename: 'faire-le-papierV2.html',
       content: combinedHtml
     }
   ]

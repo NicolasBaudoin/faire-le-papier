@@ -25,5 +25,5 @@ jobs:
         env:
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
-          ALAIN: ${{ secrets.EMAIL_ALAIN}}
+          EMAIL_ALAIN: ${{ secrets.EMAIL_ALAIN}}
         run: node generate-and-send.js
