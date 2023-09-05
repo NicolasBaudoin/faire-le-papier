@@ -11,9 +11,32 @@ body {
     background-color: #f2f2f2;
 }
 
+/* @nav */
+nav{
+    width: 100vw;
+    height: fit-content;
+    background: hsl(120,25%,86%);
+}
+.grid-items-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+#nav-list{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* @main */
 main {
   display: flex;
   flex-direction: column
+}
+#prono-title{
+    background: #9ce9ae;
+
 }
 /* @Form */
 form {
@@ -71,7 +94,7 @@ form button {
     height: fit-content;
     position: relative; 
     overflow-y: auto;
-    border : 1px black solid; 
+    border : 1px #cccccc solid; 
 }
 
 #horse-list-container h3 {
@@ -84,8 +107,11 @@ form button {
   width: 90VW; /* Définissez la largeur souhaitée pour le conteneur */
   overflow-x: scroll; /* Ajoute une barre de défilement horizontale si nécessaire */
   white-space: nowrap; /* Empêche le retour à la ligne des éléments dans la liste */
-  height: 10vh;
+  height: 12vh;
   overflow-y: hidden;
+  border: #cccccc 1px solid;
+  box-shadow:  black 5px;
+  margin: 10px;
 }
 
 #horse-list {
@@ -104,7 +130,8 @@ form button {
     border: black solid 1px;
     border-radius: 10px;
     padding: 10px;
-    margin:5px;
+    margin:15px 5px;
+
 
     
 }
@@ -148,5 +175,18 @@ form button {
     border:1px black solid;
 }
 
+/* Style de l'infobulle */
+.infobulle {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
 
-
+/* Style de l'icône */
+#infobulle-icone {
+    cursor: pointer;
+}

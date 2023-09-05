@@ -223,3 +223,22 @@ function sort() {
     }
 }
 
+
+
+// @INFOBULLE FUNCTION
+// Fonction pour afficher l'infobulle lorsque la souris survole l'icône
+function afficherInfobulle() {
+    let infobulle = document.getElementById("tuto");
+    infobulle.style.display = "block";
+}
+
+// Fonction pour masquer l'infobulle lorsque la souris quitte l'icône
+function masquerInfobulle() {
+    let infobulle = document.getElementById("tuto");
+    infobulle.style.display = "none";
+}
+
+// Écouteurs d'événements pour afficher/masquer l'infobulle
+let infobulleIcone = document.getElementById("infobulle-icone");
+infobulleIcone.addEventListener('mouseover', afficherInfobulle);
+infobulleIcone.addEventListener('mouseout', masquerInfobulle);
