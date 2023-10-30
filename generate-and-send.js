@@ -54,15 +54,19 @@ const mailOptions = {
   from: 'baudoin.nicolasg@ggmail.com', // Sender's email
   to: [process.env.EMAIL_USER, process.env.EMAIL_ALAIN], // Recipient's email
   subject: `Mise à jour du programme Faire-Le-Papier du ${todayDate}`,
-  text: `Salut, 
+  text: `Coucou !
+  J'ai corrigé le problème de temps sur le ferrage, le bouton trier et j'ai améliorerla visibilité de l'entrée et la gestion du temps.
   
-  j'ai fais une mise à jour du visuel du programme, j'ai ajouté une bannière pour faire un titre avec un peu de couleur et un infobulle qui servira à expliquer la légende sur les chevaux quand je ferai la fonction.
-  J'ai mis les pronostiques en ligne pour permettre au formulaie d'ajout de cheval d'être plus lisible. Normalement il ne devrait pas y avoir de bug, mais n'hésite pas à comparer avec la version que tu as actuellement pour être sûr
-   hésite pas à me donner un retour !`,
+  J'ai testé de mon coté j'ai pas eu de problème, mais si tu en croises à force de l'utiliser n'hésite pas à me le dire
+  
+  Bonne Journée
+  
+  BAUDOIN
+  Nicolas`,
 //   html: combinedHtml, // Use the combined HTML content here
   attachments: [
     {
-      filename: 'faire-le-papierV2.html',
+      filename: 'faire-le-papier v1.5.html',
       content: combinedHtml
     }
   ]
