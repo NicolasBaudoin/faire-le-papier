@@ -60,7 +60,13 @@ form label {
     font-size: 14px;
     font-weight: bolder;
 }
-
+form input[type="number"]{
+    margin-bottom: 10px;
+    width: 100px ;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
 form input[type="text"],
 form select {
     width: 300px;
