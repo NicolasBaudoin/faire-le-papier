@@ -46,7 +46,9 @@
                 <br>
                     <!-- Horse's time -->
                 <label for="time" class="label-title">Saisir le temps du cheval de la course précédente :</label>
-                <input type="text" id="time" name="time">
+                <input type="number" id="minutes" name="minutes horse" placeholder="Minutes..." min="0" max="59">
+                <input type="number" id="secondes" name="secondes horse" placeholder="Secondes..." min="0" max="59">
+                <input type="number" id="dixiemes" name="dixiemes horse" placeholder="Dixieme..." min="0" max="99">
                     <!-- last race placement -->
                 <label for="lastRaceRank" class="label-title">Le cheval a-t-il fini premier à la dernière course ?</label>
                 <div  class="curr-prev-field">
