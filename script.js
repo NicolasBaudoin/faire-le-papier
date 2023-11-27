@@ -134,10 +134,10 @@ function jockeyDiff(s){
     // Comparaison
     if(prevJockey == 'normal' && currJockey == 'crack'){
         // console.log(`cas 1 ${e-1}`)
-        return e - 1
+        return s - 1
     }else if (prevJockey == 'crack' && currJockey == 'normal'){
         // console.log(`cas 2 ${e+1}`)
-        return e + 1 
+        return s + 1 
     }else {
         // console.log(`cas 3 ${e}`)
         return s
